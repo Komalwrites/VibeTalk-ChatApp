@@ -3,7 +3,7 @@ import User from "../models/user.model.js";
 
 export const authenticate = async (req, res, next) => {
   try {
-    const token = req.cookies.Chatty;
+    const token = req.cookies.VibeTalk;
 
     if (!token) {
       return res.status(401).json({ message: "Unauthorized - No Token Provided" });
